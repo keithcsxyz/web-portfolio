@@ -60,3 +60,21 @@ let letters = document.querySelectorAll('.letter');
 letters.forEach((letter, index) => {
   letter.style.animationDelay = `${index * 0.1}s`;  // Delay each letter
 });
+
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxT0nl4o0GVFumrD-H6L4EXkAylPabqJdeR-HrHC6vPMT1SXlCDuwxgBP2aT4VtzJhM/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent succesfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
