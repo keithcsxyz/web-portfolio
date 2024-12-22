@@ -19,7 +19,6 @@
                         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
 
                         <ul id="sidemenu">
-                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                             <li><a href="#">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
@@ -192,7 +191,7 @@
                                     download>Download CV</a>
                             </div>
                             <div class="contact-right">
-                                <form>
+                                <form name="submit-to-google-sheet">
                                     <input type="text" name="Name"
                                         placeholder="Your Name" required>
                                     <input type="email" name="Email"
@@ -202,6 +201,7 @@
                                     <button type="submit"
                                         class="btn btn2">Submit</button>
                                 </form>
+                                <span id="msg"></span>
                             </div>
                         </div>
                     </div>
