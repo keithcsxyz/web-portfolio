@@ -1,0 +1,214 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio ni Keith</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3a5a2e0287.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="snow"></div>
+        <div class="content">
+
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <img src="images/logo.png" class="logo" alt="logo ini">
+                                <!--hamburger-->
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                        <ul id="sidemenu">
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-text">
+                        <p>Kunware <span class="programmer">Programmer</span>
+                            kag <span class="webdev">WEBDEV</span>.</p>
+                        <h1>Hi, I'm <span class="keith">Keith</span>!</h1>
+                    </div>
+                </div>
+            </div>
+            <!------------------about meeeee----------------->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/me.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About <span>Me</span></h1>
+                            <p>Hi, I'm Keith, a 20-year-old alien from the
+                                planet Namec! 🌍👾 Currently studying computer
+                                science in my second year, I spend my days
+                                decoding the mysteries of the universe (and
+                                debugging code). If you ever need help with tech
+                                or just want to talk about life on Earth, I'm
+                                your guy! 🚀</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link"
+                                    onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links"
+                                    onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links"
+                                    onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>2023 - Current</span><br>may gamay
+                                        na aram sa Python kag C</li>
+                                    <li><span>2023 - Current</span><br>ga adal
+                                        medyo HTML kag CSS</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - Current</span><br>No
+                                        experience hahaha</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023 - Current</span><br>Dr.
+                                        Emilio B. Espinosa Sr. Memorial State
+                                        College of Agriculture and
+                                        Technology</li>
+                                    <li><span>2021 - 2023</span><br>Masbate
+                                        National Comprehensive High School</li>
+                                    <li><span>2017 - 2021</span><br>Uson
+                                        National High School</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------Servicessssssss--------------->
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title"><span>My </span>Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Programming</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ex possimus qui dolores
+                                debitis suscipit eius distinctio ipsum
+                                similique, laborum adipisci. Nam cum deserunt
+                                voluptates fugit quam, odio est. Esse, aut.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-connectdevelop"></i>
+                            <h2>Web Design</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Ex possimus qui dolores
+                                debitis suscipit eius distinctio ipsum
+                                similique, laborum adipisci. Nam cum deserunt
+                                voluptates fugit quam, odio est. Esse, aut.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------------work--------------->
+            <section id="work">
+                <h1 class="sub-title"><span>My </span>Work</h1>
+                <div id="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="Project 1">
+                        <div class="layer">
+                            <h3>COMING SOON.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi veniam unde facilis,
+                                doloribus ab consectetur animi ullam provident
+                                aliquam? Obcaecati explicabo animi perspiciatis
+                                veritatis tempora, facilis minus quasi in
+                                accusantium.</p> <br>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="Project 2">
+                        <div class="layer">
+                            <h3>COMING SOON.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi veniam unde facilis,
+                                doloribus ab consectetur animi ullam provident
+                                aliquam? Obcaecati explicabo animi perspiciatis
+                                veritatis tempora, facilis minus quasi in
+                                accusantium.</p> <br>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="Project 3">
+                        <div class="layer">
+                            <h3>COMING SOON.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Eligendi veniam unde facilis,
+                                doloribus ab consectetur animi ullam provident
+                                aliquam? Obcaecati explicabo animi perspiciatis
+                                veritatis tempora, facilis minus quasi in
+                                accusantium.</p> <br>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+
+                <!-------------Contact--------------->
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">Contact
+                                    <span>Me</span></h1>
+                                <p><i class="fa-solid fa-envelope"></i>
+                                    contact@keithcs.xyz</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/rnzrmbln"
+                                        target="_blank"><i
+                                            class="fa-brands fa-facebook"></i>
+                                        Facebook</a>
+                                    <a href="https://www.instagram.com/kith_rrr"
+                                        target="_blank"><i
+                                            class="fa-brands fa-instagram"></i>
+                                        Instagram</a>
+                                    <a
+                                        href="https://www.github.com/neophytekeith"
+                                        target="_blank"><i
+                                            class="fa-brands fa-github"></i>
+                                        Github</a>
+
+                                </div>
+                                <a href="/images/cvnikeith.pdf" class="btn btn2"
+                                    download>Download CV</a>
+                            </div>
+                            <div class="contact-right">
+                                <form>
+                                    <input type="text" name="Name"
+                                        placeholder="Your Name" required>
+                                    <input type="email" name="Email"
+                                        placeholder="Your Email" required>
+                                    <textarea name="Message" rows="6"
+                                        placeholder="Your Message"></textarea>
+                                    <button type="submit"
+                                        class="btn btn2">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>© 2024 Keith. All rights reserved.</p>
+                    </div>
+                </div>
+                <script src="script.js"></script>
+            </body>
+        </html>
