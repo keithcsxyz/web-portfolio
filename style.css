@@ -195,6 +195,13 @@ h1 .red {
   }
 }
 
+/* Ensure the container is positioned correctly */
+#bmc-button-container {
+  padding: 25px;
+  display: flex;
+  justify-content: center; /* Center the button */
+  align-items: center; /* Center the button vertically */
+}
 
 
 
@@ -602,6 +609,12 @@ nav .fa-solid {
     text-decoration: none;
     color: white;
     font-size: 18px;
+  }
+  #bmc-button-container {
+    padding: 80px;
+    display: flex;
+    justify-content: center; /* Center the button */
+    align-items: center; /* Center the button vertically */
   }
 }
 
