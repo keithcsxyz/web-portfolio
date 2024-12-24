@@ -197,7 +197,7 @@ h1 .red {
 
 /* Ensure the container is positioned correctly */
 #bmc-button-container {
-  padding: 25px;
+  padding: 50px;
   display: flex;
   justify-content: center; /* Center the button */
   align-items: center; /* Center the button vertically */
